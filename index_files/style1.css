@@ -1,0 +1,325 @@
+body {
+  font-size: 14px;
+  background: #fff;
+}
+
+/* --------------top-------------- */
+#cs {
+  position: fixed;
+  right: 10px;
+  top: 65%;
+  display: block;
+  cursor: pointer;
+  width: 18vw;
+  z-index: 11111;
+}
+
+.kf {
+  border: 0;
+  max-width: 100%;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
+
+.closeXR {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+#xrBox.show {
+  z-index: 10;
+  visibility: visible;
+  opacity: 1;
+  transition: all 1.3s;
+}
+
+#xrBox {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: -9999;
+  transition: none;
+  touch-action: pan-y;
+}
+
+.banner {
+  position: relative;
+}
+
+.logo {
+  width: 2.26rem;
+  position: absolute;
+  left: 0.38rem;
+  top: 0.36rem;
+}
+
+.bj {
+  background: url(./bg.png);
+  background-size: 100% 100%;
+  width: 100%;
+  height: 34rem;
+}
+
+.activity {
+  text-align: center;
+}
+
+.activity .imgWd_1 {
+  width: 80%;
+  margin: 0 auto .2rem;
+}
+
+.activity .imgWd_2 {
+  width: 80%;
+  margin: 0 auto .2rem;
+}
+
+.activity .imgWd_3{
+  width: 80%;
+  margin: 0.5rem auto .2rem;
+}
+.activity .imgWd_4{
+  width: 80%;
+  margin: 0 auto .2rem;
+}
+
+.activity .imgWd_5 {
+  width: 80%;
+  margin: 0 auto .2rem;
+}
+
+.wybnr {
+  padding: 0rem 0.2rem 0;
+}
+
+.wybnr img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.yxfl_nr {
+  position: relative;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.yxfl_nr .swiper-container {
+  width: 100%;
+}
+
+.yxfl_nr .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 40%;
+  height: auto;
+}
+
+.yxfl_nr img {
+  border-radius: 0.15rem;
+}
+
+.rmyxbox {
+  width: 1.84rem;
+  margin: 0 auto;
+}
+
+.rmyxbox img {
+  width: 1.84rem;
+  height: 2.05rem;
+}
+
+.rmyxbox p {
+  font-size: 0.24rem;
+  line-height: 0.48rem;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  background: #2D75F3;
+  border-bottom-left-radius: 0.1rem;
+  border-bottom-right-radius: 0.1rem;
+}
+
+.rmyx_nr ul {
+  overflow: hidden;
+  padding: 1.3rem 0.38rem 0;
+}
+
+.rmyx_nr li {
+  width: 33.33%;
+  float: left;
+  padding-bottom: 0.2rem;
+}
+
+.rmhd {
+  padding-top: 3.2rem;
+}
+
+.lncc .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.lncc .swiper-slide:not(.swiper-slide-active) {
+  transform: scale(0.8);
+}
+
+.lncc .swiper-slide-active {
+  width: 80%;
+}
+
+.footer {
+  margin-top: 2rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+}
+
+.footer p {
+  width: 1.91rem;
+  margin: 0 auto;
+  padding-bottom: 0.22rem;
+}
+
+.footer h2 {
+  width: 6.67rem;
+  margin: 0 auto;
+}
+
+.tab {
+  position: fixed;
+  top: 4.2rem;
+  right: .2rem;
+  width: .98rem;
+  height: 4.28rem;
+}
+
+.chakan {
+  width: 1.09rem;
+  height: 0.33rem;
+  animation: mymove 5s infinite;
+  -webkit-animation: mymove 5s infinite;
+  /*Safari and Chrome*/
+  animation-direction: alternate;
+  /*轮流反向播放动画。*/
+  animation-timing-function: ease-in-out;
+  /*动画的速度曲线*/
+  /* Safari 和 Chrome */
+  -webkit-animation: mymove 2s infinite;
+  -webkit-animation-direction: alternate;
+  /*轮流反向播放动画。*/
+  -webkit-animation-timing-function: ease-in-out;
+  /*动画的速度曲线*/
+}
+
+@keyframes mymove {
+  0% {
+    transform: scale(1);
+    /*开始为原始大小*/
+  }
+
+  25% {
+    transform: scale(1.2);
+    /*放大1.1倍*/
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(1.2);
+  }
+}
+
+.btnJump {
+  display: flex;
+  flex-direction: column;
+}
+
+.btnJump a {
+  display: inline-block;
+}
+
+.btnJump .appDomn{
+  margin: 0 auto;
+}
+
+.foot{
+  position: fixed;
+  bottom: 0;
+  width: 7.5rem;
+  margin: 0px auto;
+  height: 2rem;
+  background: url(./footbg.png) no-repeat;
+  z-index: 222;
+  background-size: cover;
+  background-position: top center;
+  display: flex;
+  justify-content: center;
+}
+.foot a{
+    display: inline-block;
+    margin: 8% 1%;
+    width: 2.2rem;
+}
+.foot a:nth-child(2){
+  height: 0.7rem;
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(9, 142, 253);
+  line-height: 30px;
+}
+.foot a:nth-child(2) span{
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(9, 142, 253);
+}
+.name{
+  position: relative;
+  margin-top: -.6rem;
+}
+
+.name img {
+  width: 80%;
+  margin-top: 0.7rem;
+  margin-left: 15%;
+}
+
+.name_tile{
+	position: absolute;
+	top: 4.4rem;
+	left: 2.2rem;
+	font-weight: 600 !important;
+	font-size: 0.2rem;
+	color: red;
+}
+
+@media screen and (max-width:1024px){
+    .foot a:nth-child(2){
+        font-size: 12px;
+    }
+    .foot a:nth-child(2) span{
+        font-size: 12px;
+    }
+  .foot a:nth-child(2){
+    line-height:17px;
+  }
+  .foot a:nth-child(2) span{
+    line-height:17px;
+  }
+}
